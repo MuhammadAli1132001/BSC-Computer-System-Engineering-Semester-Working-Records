@@ -1,0 +1,44 @@
+header{
+    display: flex;
+    justify-items:center;  
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+    grid-gap: 5px;
+    grid-template-areas: " lab-1  lab-2 lab-3" " lab-4  rest .";
+    
+
+}
+
+
+.lab-1{
+    background-color: grey;
+
+}
+
+.lab-2{
+    background-color: grey;
+
+}
+
+.lab-3{
+    background-color: grey;
+}
+
+.lab-4 {
+    background-color: grey;
+
+}
+
+.rest{
+    background-color: grey;
+}
+
+h2{
+    text-decoration-color: blue;
+}
+

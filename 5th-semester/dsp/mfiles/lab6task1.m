@@ -1,0 +1,21 @@
+
+
+fs = 1000; 
+fc=200;
+t=0:1/fs:0.2;
+fd=50;
+
+x= sin (2*pi*30*t) + 2*sin (2*pi*60*t) ;
+y= fmmod (x,fc,fs,fd);
+plot(t,x,'c',t,y,'r--');
+fd=100;
+figure;
+out= fmmod (x,fc,fs,fd);
+plot(t,x,'c',t,out,'r--');
+
+figure;
+demodu= fmdemod(out,fc,fs,fd);
+plot(t,x,'c',t,demodu,'r--');
+
+
+

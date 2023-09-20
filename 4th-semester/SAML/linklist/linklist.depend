@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1622634750 source:c:\users\muhammad ali khan\documents\saml\linklist\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1622711960 source:c:\users\muhammad ali khan\documents\saml\linklist\linklist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1622712345 source:c:\users\muhammad ali khan\desktop\untitled2.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

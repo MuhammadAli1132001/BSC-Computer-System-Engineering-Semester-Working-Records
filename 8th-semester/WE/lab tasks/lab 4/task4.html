@@ -1,0 +1,65 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="utf-8">
+    <title> Boxes with jQuery</title>
+
+
+    <style>
+    .rect {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 0;
+    border: 2px solid black;
+    display: inline-block;
+    }
+    .rounded {
+    border-radius: 50%;
+    }
+    </style>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        // Toggle colors button
+            $("#colorButton").click(function() {
+            $(".rect").each(function() {
+            var currentColor = $(this).css("background-color");
+            if (currentColor === "rgb(0, 0, 255)") {
+            $(this).css("background-color", "white");
+            } 
+            else {
+            $(this).css("background-color", "blue");
+            }
+            });
+        });
+        
+        $("#borderButton").click(function() {
+          $(".rect").toggleClass("rounded");
+        });
+
+        $("#add-box-Button").click(function() {
+          var newRectangle = $("<div class='rect'></div>");
+          $("#rect3").after(newRectangle);
+
+        });
+        });
+        
+    </script>
+    </head>
+    <body>
+        <div id="rect1" class="rect"></div>
+        <div id="rect2" class="rect"></div>
+        <div id="rect3" class="rect"></div>
+    <br>
+    <br>
+    <h1>Toggles</h1>
+        <button id="colorButton">Toggle Colors</button>
+        <button id="borderButton">Toggle rounded Borders</button>
+        <button id="add-box-Button">Add boxes</button>
+        <p style="color:brown;">Muhammad Ali</p>
+    </body>
+
+    </html>

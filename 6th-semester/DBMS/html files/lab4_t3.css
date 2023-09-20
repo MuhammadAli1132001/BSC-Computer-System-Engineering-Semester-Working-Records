@@ -1,0 +1,16 @@
+
+.heading {
+         font-family: Garamond;
+         font-size: 26pts;
+         color: red;
+}
+.paraghraph {
+        font-weight: bold;
+        font-size: 12pts;
+        color: black;
+}
+.list {
+     margin-left: 2%;
+     list-style-type: square;
+}
+

@@ -1,0 +1,44 @@
+clc 
+clear all
+close all
+x1=[-2 4 3 -3 2];
+x2=[-2 -1 3 2 4];
+x3=[0 4 -3 5 3];
+lhs=(x1.*x2).*x3;
+rhs=x1.*(x2.*x3);
+subplot(3,1,1);
+stem(x1);
+title('x1[n]');
+xlabel('index, n');
+subplot(3,1,2);
+stem(x2);
+title('x2[n]');
+xlabel('index, n');
+subplot(3,1,3);
+stem(x3);
+title('x3[n]');
+xlabel('index, n');
+figure;
+subplot(2,1,1);
+stem(lhs);
+title('x1[n] * (x2[n] * x3[n])');
+xlabel('index, n');
+axis([-5 10 -40 40]);
+subplot(2,1,2);
+stem(rhs);
+title('(x1[n] * x2[n]) * x3[n] ');
+xlabel('index, n');
+axis([-5 10 -40 40]);
+figure;
+lhs=x1.*x2;
+rhs=x2.*x1;
+subplot(2,1,1);
+stem(lhs);
+title('x1[n] * x2[n]');
+xlabel('index, n');
+axis([-4 10 -10 10]);
+subplot(2,1,2);
+stem(rhs);
+title('x2[n] * x1[n]');
+xlabel('index, n');
+axis([-4 10 -10 10]);

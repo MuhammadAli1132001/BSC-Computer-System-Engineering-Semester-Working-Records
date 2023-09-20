@@ -1,0 +1,3 @@
+DELL-PC
+DESKTOP-50104U4 
+Saturday, August 15, 2020  3:18:48 PM

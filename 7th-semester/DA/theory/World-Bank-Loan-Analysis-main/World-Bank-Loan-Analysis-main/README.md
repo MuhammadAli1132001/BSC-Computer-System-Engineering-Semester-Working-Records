@@ -1,0 +1,2 @@
+# World Bank Loan Analysis-Project
+The main idea of this project is to have a simple yet powerful analysis on the data of loans taken by different countries throughout the world, from World Bank. This analysis, is for laymen, in the sense, that almost all of the constraints are clearly stated, and simple to understand. A lot of data cleaning was needed to be done, and thus performed, as the dataset used is a real time dataset.

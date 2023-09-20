@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change Color</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#change-btn").click(function() {
+				var color = $("#color-input").val();
+				$("body").html(function(index, oldHtml) {
+					return oldHtml.replace(/White/g, color);
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<input type="text" id="color-input" placeholder="Enter a color">
+	<button id="change-btn">Change</button>
+	<p>This is some text that contains the word "White".</p>
+	<p>Here's another occurrence of the word "White".</p>
+</body>
+</html>

@@ -1,0 +1,34 @@
+clc
+close all
+clear all
+
+fs = 1000; 
+fc=200;
+t=0:1/fs:0.2;
+fd=50;
+
+%making some composite baseband signal 
+x= sin (2*pi*30*t) + 2*sin (2*pi*60*t) ;
+
+y= fmmod (x,fc,fs,fd);
+plot(t,x,'c',t,y,'r--');
+title('coomposite signal in frequency-domain');
+    xlabel('frequency');
+    ylabel('Amplitude');
+ 
+fd=100;
+
+figure;
+out= fmmod (x,fc,fs,fd);
+plot(t,x,'c',t,out,'r--');
+title('coomposite signal in frequency-domain');
+    xlabel('frequency');
+    ylabel('Amplitude');
+ 
+figure;
+demodu= fmdemod(out,fc,fs,fd);
+plot(t,x,'c',t,demodu,'r--');
+title('coomposite + random signal in frequency-domain');
+    xlabel('frequency');
+    ylabel('Amplitude');
+    

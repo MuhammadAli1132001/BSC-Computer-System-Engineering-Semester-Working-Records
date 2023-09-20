@@ -1,0 +1,20 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    display: flex;   
+    flex-direction: column;
+    background-color: darkgrey;
+    width: 140px;
+    height: 500px;
+    font-weight: bolder;
+    justify-content:space-between;
+
+}
+
+.item{
+    padding-left: 5px;
+}

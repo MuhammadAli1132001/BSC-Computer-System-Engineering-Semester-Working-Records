@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <form action="submit" name="form" method="get">
+    <p>iunderstand taht this software has no liability</p>
+    <input type="checkbox" id="checkbox"  onclick= "boxcheck()">
+    <input type="button" id="btn" value="checkbutton" disabled>
+    </form>
+    
+
+    <script>
+
+    function boxcheck() {
+        var cb = document.getElementById("checkbox");
+    if(cb.checked==true){  
+        alert("checkbox is checked js okhatooo")
+        document.form[0].btn.disalbed=false
+    }
+
+    else{
+        document.form[0].btn.disalbed=false
+    }
+}
+  </script>
+
+</body>
+</html>
